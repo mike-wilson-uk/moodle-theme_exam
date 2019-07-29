@@ -1,0 +1,158 @@
+// Post SCSS for the theme.
+// Import FontAwesome.
+@import "../../boost/scss/fontawesome";
+// Import All of Bootstrap
+@import "../../boost/scss/bootstrap";
+// Import Core moodle CSS
+@import "../../boost/scss/moodle";
+
+//Navbar
+.navbar{
+    height: 50px;
+}
+.navbar .user_fullname {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 15px;
+}
+.navbar input#date {
+    width: 220px;
+}
+#exam-browser{
+    background-color: #00A0FF;
+}
+#non-exam-browser{
+    background-color: #C4014B;
+}
+
+//Front page
+#page-site-index div[role="main"] {
+    display: none;
+}
+div#region-main-box {
+    margin-top: 15px !important;
+}
+
+//Main content
+.exam-title{
+border: 1px solid rgba(0,0,0,.125);
+}
+.exam-title-spacer{
+height: 15px;
+}
+section#region-main h2:first-of-type {
+    display: none;
+}
+body {
+    background: #f4f4f4;
+}
+.card{
+    border: 0 solid transparent;
+}
+.btn.btn-primary {
+    background: #00a0ff;
+    border: 1px solid #00a0ff;
+}
+#page-login-index section#region-main h2:first-of-type {
+display: block;
+}
+#page-login-index .card-block{
+border: 1px solid rgba(0,0,0,.125);
+}
+#page-login-index h2.card-header.text-center {
+    color: #fff;
+}
+
+//Quiz
+.que .formulation {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+.path-mod-quiz #mod_quiz_navblock .qnbutton .thispageholder {
+    background: transparent !important;
+}
+.drop{
+border: 1px solid !important;
+}
+
+//Accessibiity block
+.block_accessibility .card-title, .block_accessibility .block-controls {
+    display: none !important;
+}
+.block_accessibility .card-body{
+margin: auto;
+}
+#accessibility_controls ul {
+    list-style: none;
+    margin: .4em 0;
+    padding: 0;
+}
+ul#block_accessibility_changecolour {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#accessibility_controls ul {
+    text-align: center;
+}
+#accessibility_controls .access-button a {
+    padding: .41em .3em;
+    width: 2.1em;
+    height: 2.1em;
+}
+#accessibility_controls .access-button {
+    margin: 0 0.4em;
+}
+ul#block_accessibility_changecolour, ul#block_accessibility_textresize {
+    margin-bottom: 15px;
+}
+input#block_accessibility_launchtoolbar {
+    width: 94%;
+    height: 35px;
+}
+.atbar-always {
+    display: inline-block;
+    text-align: center;
+    width: 98%;
+    margin-top: 10px;
+}
+input#atbar_auto {
+    margin-right: 5px;
+}
+.launch-accessibility {
+    background-color: transparent !important;
+    border: transparent !important;
+    margin-right: 10px;
+}
+
+//Blocks
+.block {
+    display: none;
+}
+.block_accessibility {
+    display: inline !important;
+}
+.block_accessibility .card-body{
+    background: #fff;
+}
+#mod_quiz_navblock{
+display: inline !important;
+}
+#mod_quiz_navblock .card-body{
+background: #fff;
+}
+
+//Footer
+#page-footer {
+    min-height: auto;
+    position: relative;
+    bottom: -77px;
+}
+.moodle_server_info {
+    text-align: center;
+}
+.purgecaches,
+.tool_dataprivacy {
+    display: none;
+}
